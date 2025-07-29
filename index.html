@@ -1,0 +1,35 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Nour Eldeen Sameh Mohamed</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="hero">
+    <h1>Nour Eldeen Sameh Mohamed</h1>
+    <p>Graphic Designer</p>
+    <a href="mailto: noureldeen8809@gmail.com" class="btn">Contact Me</a>
+  </header>
+
+  <section id="projects">
+    <h2>My Projects</h2>
+    <div id="project-list"></div>
+  </section>
+
+  <script>
+    fetch('projects/sample-project.json')
+      .then(response => response.json())
+      .then(data => {
+        const container = document.getElementById('project-list');
+        container.innerHTML += `
+          <div class="project">
+            <h3>${data.title}</h3>
+            <p>${data.description}</p>
+          </div>`;
+      });
+  </script>
+</body>
+</html>
