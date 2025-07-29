@@ -1,10 +1,10 @@
-
 backend:
-  name: git-gateway
+  name: github
+  repo: Nour8809-Eldeen/Nour-portfolio
   branch: main
 
-media_folder: "images"
-public_folder: "/images"
+media_folder: "images/uploads"
+public_folder: "/images/uploads"
 
 collections:
   - name: "projects"
@@ -15,3 +15,4 @@ collections:
     fields:
       - { label: "Title", name: "title", widget: "string" }
       - { label: "Description", name: "description", widget: "text" }
+      - { label: "Image", name: "image", widget: "image" }
