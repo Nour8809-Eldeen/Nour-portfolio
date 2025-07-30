@@ -9,8 +9,8 @@ body {
 }
 
 .hero {
-  background-color: #222;
-  color: white;
+  background-color: #00f7ff;
+  color: rgb(0, 0, 0);
   padding: 80px 20px;
   text-align: center;
 }

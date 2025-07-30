@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -11,25 +10,27 @@
   <header class="hero">
     <h1>Nour Eldeen Sameh Mohamed</h1>
     <p>Graphic Designer</p>
-    <a href="mailto: noureldeen8809@gmail.com" class="btn">Contact Me</a>
+    <a href="mailto:noureldeen8809@gmail.com" class="btn">Contact Me</a>
   </header>
 
   <section id="projects">
     <h2>My Projects</h2>
-    <div id="project-list"></div>
-  </section>
+    <div id="project-list">
+      <div class="project">
+        <h3>Business Card Design</h3>
+        <p>A clean and minimal business card design for corporate identity.</p>
+      </div>
 
-  <script>
-    fetch('projects/sample-project.json')
-      .then(response => response.json())
-      .then(data => {
-        const container = document.getElementById('project-list');
-        container.innerHTML += `
-          <div class="project">
-            <h3>${data.title}</h3>
-            <p>${data.description}</p>
-          </div>`;
-      });
-  </script>
+      <div class="project">
+        <h3>Logo Design</h3>
+        <p>Creative and modern logo for a tech startup.</p>
+      </div>
+
+      <div class="project">
+        <h3>Flyer Design</h3>
+        <p>Eye-catching flyer made for a marketing campaign.</p>
+      </div>
+    </div>
+  </section>
 </body>
 </html>
