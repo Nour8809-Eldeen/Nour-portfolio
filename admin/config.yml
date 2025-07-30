@@ -1,6 +1,5 @@
 backend:
-  name: github
-  repo: Nour8809-Eldeen/Nour-portfolio
+  name: git-gateway
   branch: main
 
 media_folder: "images/uploads"
